@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>kép+link</title>
+ <style>
+          body {
+          margin: 0;
+          font-family: "Lato", sans-serif;
+          }
+          
+          .sidebar {
+          margin: 0;
+          padding: 0;
+          width: 200px;
+          background-color: #f1f1f1;
+          position: fixed;
+          height: 100%;
+          overflow: auto;
+          }
+          
+          .sidebar a {
+          display: block;
+          color: black;
+          padding: 16px;
+          text-decoration: none;
+          }
+          .sidebar a.active {
+          background-color: #04AA6D;
+          color: white;
+          }
+          
+          .sidebar a:hover:not(.active) {
+          background-color: #555;
+          color: white;
+          }
+          
+          div.content {
+          margin-left: 200px;
+          padding: 1px 16px;
+          height: 1000px;
+          }
+          
+          @media screen and (max-width: 700px) {
+          .sidebar {
+          width: 100%;
+          height: auto;
+          position: relative;
+          }
+          .sidebar a {float: left;}
+          div.content {margin-left: 0;}
+          }
+          
+          @media screen and (max-width: 400px) {
+          .sidebar a {
+          text-align: center;
+          float: none;
+          }
+          }
+          </style>
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+          <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,100;1,600&family=Roboto+Slab&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="sidebar">
+    <a  href="https://rubovszkib.github.io/collage/">Kollázs</a>
+    <a class="active" href="https://rubovszkib.github.io/collage/keplink">Képlink</a>
+    <a href="https://rubovszkib.github.io/collage/listak">Órarend</a>
+    <a href="https://rubovszkib.github.io/collage/orarend">Listák</a>
+    <a  href="https://rubovszkib.github.io/collage/urlap">Űrlap</a>
+    </div>
+       
+      <div style="font-family: 'Roboto Slab', serif;" class="content">
+     
+
+
+<h1>Rubovszki Baklázs</h1>
+<P>Képlink feladat</P>
+ <a href=" https://hu.wikipedia.org/wiki/Szu%E2%80%9330"><img src="https://militarywatchmagazine.com/m/articles/2020/08/24/article_5f438498b5b5f0_65769086.jpg" alt="su30as vadászbombázo" title="Su30" width="250"></a>
+</div>
+</body>
+</html>

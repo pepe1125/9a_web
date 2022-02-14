@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Órarend</title>
+    <style>
+        body {
+        margin: 0;
+        font-family: "Lato", sans-serif;
+        }
+        
+        .sidebar {
+        margin: 0;
+        padding: 0;
+        width: 200px;
+        background-color: #f1f1f1;
+        position: fixed;
+        height: 100%;
+        overflow: auto;
+        }
+        
+        .sidebar a {
+        display: block;
+        color: black;
+        padding: 16px;
+        text-decoration: none;
+        }
+        .sidebar a.active {
+        background-color: #04AA6D;
+        color: white;
+        }
+        
+        .sidebar a:hover:not(.active) {
+        background-color: #555;
+        color: white;
+        }
+        
+        div.content {
+        margin-left: 200px;
+        padding: 1px 16px;
+        height: 1000px;
+        }
+        
+        @media screen and (max-width: 700px) {
+        .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        }
+        .sidebar a {float: left;}
+        div.content {margin-left: 0;}
+        }
+        
+        @media screen and (max-width: 400px) {
+        .sidebar a {
+        text-align: center;
+        float: none;
+        }
+        }
+        </style>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,100&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Raleway:ital,wght@1,100;1,600&family=Roboto+Slab&display=swap" rel="stylesheet">
+</head>
+<body>  
+    <div style="font-family: 'Raleway', sans-serif;" class="sidebar">
+        <a  href="https://rubovszkib.github.io/collage/">Kollázs</a>
+        <a href="https://rubovszkib.github.io/collage/keplink">Képlink</a>
+        <a class="active" href="https://rubovszkib.github.io/collage/listak">Órarend</a>
+        <a  href="https://rubovszkib.github.io/collage/orarend">Listák</a>
+        </div>
+      
+  
+  <div style="font-family: 'Akaya Telivigala', cursive;" class="content">
+
+
+<table  style="background-color: pink;">
+    <tr>
+        <th style="background-color:black ; color: red;">Óraszám</th>
+        <th style="background-color: black;color: red;">Idő</th>
+        <th style="background-color: black;color: red;">Hétfő</th>
+        <th style="background-color: black;color: red;">Kedd</th>
+        <th style="background-color: black;color: red;">Szerda</th>
+        <th style="background-color: black;color: red;">Csütörtök</th>
+        <th style="background-color: black;color: red;">Péntek</th>
+        
+    </tr>
+    <tr>
+        <td style="background-color: black;color: red;">0.</td>
+        <td style="background-color: blue;">7:15-8:00</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td style="background-color: darkolivegreen;">Testnevelés</td>
+        <td style="background-color: chartreuse;">Programozási alapok</td>
+        
+    </tr>
+    <tr>
+        <td style="background-color: black;color: red;">1.</td>
+        <td style="background-color: blue;">8:00-8:45</td>
+        <td style="background-color: darkgrey;">Matematika</td>
+        <td></td>
+        <td style="background-color: darkorchid;">Történelem</td>
+        <td style="background-color: darkolivegreen;">Testnevelés</td>
+        <td style="background-color: chartreuse;">Programozási alapok</td>
+    </tr>
+    <tr>
+        <td style="background-color: black;color: red;">2.</td>
+        <td style="background-color: blue;">8:55-9:40</td>
+        <td style="background-color: darkolivegreen;">Testnevelés</td>
+        <td style="background-color: deepskyblue;">Angol nyelv</td>
+        <td style="background-color: darkgrey;">Matematika</td>
+        <td style="background-color: green;">IKT projektmunka I.</td>
+        <td style="background-color: coral;">Informatikai és távközlési alapok I.</td>
+    </tr>
+    <tr>
+        <td style="background-color: black;color: red;">3.</td>
+        <td style="background-color: blue;">9:50-10:35</td>
+        <td style="background-color: deepskyblue;">Angol nyelv</td>
+        <td style="background-color: sienna;">Osztályfőnöki</td>
+        <td style="background-color: purple;">Komplex természettudomány</td>
+        <td style="background-color: springgreen;"> Magyar nyelv és irodalom</td>
+        <td style="background-color: coral;">Informatikai és távközlési alapok I.</td>
+    </tr>
+    <tr>
+        <td style="background-color: black;color: red;">4.</td>
+        <td style="background-color: blue;">10:45-11:30</td>
+        <td style="background-color: darkorchid;">Történelem</td>
+        <td style="background-color: darkgrey;">Matematika</td>
+        <td style="background-color: deepskyblue;">Angol nyelv</td>
+        <td style="background-color: darkgrey;">Matematika</td>
+        <td style="background-color: coral;">Informatikai és távközlési alapok I.</td>
+    </tr>
+    <tr>
+        <td style="background-color: black;color: red;">5.</td>
+        <td style="background-color: blue;">11:40-12:25</td>
+        <td style="background-color: teal;">Magyar nyelv és irodalom</td>
+        <td style="background-color: green;">IKT projektmunka I.</td>
+        <td style="background-color: springgreen;">Magyar nyelv és irodalom</td>
+        <td style="background-color: purple;">Komplex természettudomány</td>
+        <td style="background-color: darkorchid;" >Törtéleme</td>
+    </tr>
+    <tr>
+        <td style="background-color: black ; color: red;">6.</td>
+        <td style="background-color: blue;">12:45-13:30</td>
+        <td style="background-color: orange;">Kompetenciafejlesztés</td>
+        <td style="background-color: navy;">Magyar nyelv és irodalom</td>
+        <td style="background-color: palevioletred;">Digitális kultúra</td>
+        <td style="background-color: deepskyblue;">Angol nyelv</td>
+        <td style="background-color: rgb(75, 67, 67);">Matematika (kompetenciafejlesztés)</td>
+    </tr>
+    <tr>
+        <td style="background-color: black;color: red;">7.</td>
+        <td style="background-color: blue;">13:35-14:20</td>
+        <td style="background-color: purple;">Komplex természettudomány</td>
+        <td></td>
+        <td style="background-color: palevioletred;">Digitális kultúra</td>
+        <td></td>
+        <td style="background-color: darkolivegreen;">Testnevelés</td>
+    </tr>
+</table>    
+</div>
+</body>
+</html>
