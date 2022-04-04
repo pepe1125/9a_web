@@ -1,4 +1,8 @@
 # Ez itt a 9.A [2.csoport] webáruház projektje a 2022-es évre! :)
+
+[Link az oldalhoz](https://github.com/pepe1125/9a_web/index.html)
+
+
 > Hajrá! 
 Csapattagok: 
 
