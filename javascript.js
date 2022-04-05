@@ -11,3 +11,20 @@ function hozzaad(termek) {
 function torles() {
     localStorage.clear()
 }
+
+
+function reg(username, password, password2)
+{
+    if(username != " ")
+    {
+        if(password != " ")
+        {
+            if(password == password2)
+            {
+
+                localStorage.setItem(username, password)
+                alert("Regisztráció sikeres.")
+            } 
+        }
+    }
+}

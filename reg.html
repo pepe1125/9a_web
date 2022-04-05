@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+    <html lang="hu">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>9.a web</title>
+        </head>
+        <body>
+            <fieldset>
+                <legend>
+                  Regisztráció
+                </legend>
+                <input type="text"  placeholder="Felhasználónév" id="username" required>
+                <input type="password"  placeholder="Jelszó" id="password" required>
+                <input type="password"  placeholder="Jelszó ismétlése" id="password2" required>
+                <button onclick="reg(username.value, password.value, password2.value)">
+                  Regisztráció
+                </button>
+              </fieldset>
+
+              <script src="javascript.js"></script>
+        </body>
+    </html>
