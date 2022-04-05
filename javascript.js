@@ -28,3 +28,16 @@ function reg(username, password, password2)
         }
     }
 }
+
+function bej(felh, jelsz, email) {
+    if (email != ""){
+        if (felh != "") {
+            if (jelsz != "") {
+                alert("Belépés sikeres!");
+            }
+        }
+    }
+        else {
+            alert("Nincs ilyen felhasználó");
+        }
+}
