@@ -31,13 +31,20 @@ function reg(username, password, password2)
 
 function bej(user, pass)
 {
+    var username = localStorage.getItem(username)
+    var password = localStorage.getItem(password)
+
+
     if (user != " ")
     {
         if (pass != " ")
         {
-            if()
+            if(user == username)
             {
-                alert("Belépés sikeres!");
+                if(pass == password)
+                {
+                    alert("Belépés sikeres!");
+                }
             }    
         }
     }
