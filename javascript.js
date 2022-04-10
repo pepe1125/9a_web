@@ -29,15 +29,20 @@ function reg(username, password, password2)
     }
 }
 
-function bej(felh, jelsz, email) {
-    if (email != ""){
-        if (felh != "") {
-            if (jelsz != "") {
+function bej(user, pass)
+{
+    if (user != " ")
+    {
+        if (pass != " ")
+        {
+            if()
+            {
                 alert("Belépés sikeres!");
-            }
+            }    
         }
     }
-        else {
-            alert("Nincs ilyen felhasználó");
-        }
+    else 
+    {
+        alert("Nincs ilyen felhasználó");
+    }
 }
