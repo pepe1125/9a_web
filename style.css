@@ -1,0 +1,23 @@
+.kep1 {
+    width: 500px;
+    height: 350px;
+}
+.logo {
+    display: block;
+  float: left;
+}
+#nev {
+    float: right;
+
+    text-align: right;
+}
+h2 {
+    text-align: center;
+    font-size: x-large;
+}
+.container {
+    margin-top: 250px; 
+}
+.col-sm-4 { background-color: aqua; border: 12px solid lightgray;}
+.col-lg-4 { background-color: aqua; border: 12px solid lightgray;}
+
