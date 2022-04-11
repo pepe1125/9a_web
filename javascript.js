@@ -28,9 +28,12 @@ function reg(username, password, password2)
                   "adatok":[username, password, "1nev", "2jelszo"]
                 }
                 let str = JSON.stringify(options)
-                
             }
         }
+    }
+    else
+    {
+        alert("Regisztráció sikertelen.")
     }
 }
 
