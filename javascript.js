@@ -21,29 +21,38 @@ function reg(username, password, password2)
         {
             if(password == password2)
             {
-                let options = {
-                  "adatok":[username, password, "1nev", "2jelszo"]};
+                localStorage.setItem(username, password)
+                alert("Regisztráció sikeres.")
+                let options = 
+                {
+                  "adatok":[username, password, "1nev", "2jelszo"]
+                }
                 let str = JSON.stringify(options)
-                localStorage.setItem("Felhasználó", str);
-                alert("Regisztráció sikeres.");
+                
             }
         }
     }
 }
 
 
-function bej(felh, jelsz, username, password) {
-    let options = {
-        "adatok":[username, password, "1nev", "2jelszo"]};
+function bej(user, pass)
+{
+    let options = 
+    {
+        "adatok":[username, password, "1nev", "2jelszo"]
+    }
         console.log(options);
-      let obj = JSON.parse(options);
-      console.log(obj);
-    if(console.log(obj.adatok[0]) == felh){
-        if(console.log(obj.adatok[1]) == jelsz){
+        let obj = JSON.parse(options);
+        console.log(obj);
+    if(console.log(obj.adatok[0]) == user)
+    {
+        if(console.log(obj.adatok[1]) == pass)
+        {
             alert("Belépés sikeres.");
-          }
         }
-        else {
+        else 
+        {
             alert("Belépés sikertelen.");
         }
     }
+}
