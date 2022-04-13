@@ -21,41 +21,25 @@ function reg(username, password, password2)
         {
             if(password == password2)
             {
-                localStorage.setItem(username, password)
+                localStorage.setItem("user", username)
+                localStorage.setItem("passw", password)
                 alert("Regisztráció sikeres.")
-                let options = 
-                {
-                  "adatok":[username, password, "1nev", "2jelszo"]
-                }
-                let str = JSON.stringify(options)
             }
         }
     }
-    else
-    {
-        alert("Regisztráció sikertelen.")
-    }
 }
 
 
-function bej(user, pass)
+function bej(felh, jelsz) 
 {
-    let options = 
-    {
-        "adatok":[username, password, "1nev", "2jelszo"]
-    }
-        console.log(options);
-        let obj = JSON.parse(options);
-        console.log(obj);
-    if(console.log(obj.adatok[0]) == user)
-    {
-        if(console.log(obj.adatok[1]) == pass)
-        {
+    console.log(localStorage.getItem("user"));
+    console.log(localStorage.getItem("passw"));
+    if(felh ==  localStorage.getItem("user")){
+        if(jelsz == localStorage.getItem("passw")){
             alert("Belépés sikeres.");
+          }
         }
-        else 
-        {
+        else {
             alert("Belépés sikertelen.");
         }
     }
-}

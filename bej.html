@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<DOCTYPE html>
     <html lang="hu">
         <head>
             <meta charset="UTF-8">
@@ -28,11 +28,11 @@
         <body>
             <fieldset>
                 <legend>Bejelentkezés</legend>
-                <input type="text" id="user" placeholder="Felhasználónév">
+                <input type="text" id="felh" placeholder="Felhasználónév" required>
                 <br>
-                <input type="password" id="pass" placeholder="Jelszó">
+                <input type="password" id="jelsz" placeholder="Jelszó" required>
                 <br>
-                <button onclick="bej(user.value, pass.value)">OK</button>
+                <button onclick="bej(felh.value, jelsz.value)">Bejelentkezés</button>
             </fieldset>
 
             <script src="javascript.js"></script>
