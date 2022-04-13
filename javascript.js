@@ -32,8 +32,8 @@ function reg(username, password, password2)
 
 function bej(felh, jelsz) 
 {
-    console.log(localStorage.getItem("user"));
-    console.log(localStorage.getItem("passw"));
+    localStorage.getItem("user");
+    localStorage.getItem("passw");
     if(felh ==  localStorage.getItem("user")){
         if(jelsz == localStorage.getItem("passw")){
             alert("Belépés sikeres.");
