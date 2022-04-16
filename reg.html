@@ -22,10 +22,10 @@
             <meta name="msapplication-TileColor" content="#ffffff">
             <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
             <meta name="theme-color" content="#ffffff">
-            
+            <link rel="stylesheet" href="style.css">
             <title>Regisztráció</title>
         </head>
-        <body>
+        <body style="background-color: aqua; text-align: center;">
             <fieldset>
                 <legend>
                   Regisztráció
@@ -33,10 +33,14 @@
                 <input type="text"  placeholder="Felhasználónév" id="username" required>
                 <input type="password"  placeholder="Jelszó" id="password" required>
                 <input type="password"  placeholder="Jelszó ismétlése" id="password2" required>
+                <br>
+                <br>
                 <button onclick="reg(username.value, password.value, password2.value)">
                   Regisztráció
                 </button>
               </fieldset>
+              <br>
+              <a href="bej.html">Már van fiókod?</a>
 
               <script src="javascript.js"></script>
         </body>

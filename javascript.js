@@ -37,9 +37,11 @@ function bej(felh, jelsz)
     if(felh ==  localStorage.getItem("user")){
         if(jelsz == localStorage.getItem("passw")){
             alert("Belépés sikeres.");
-          }
         }
-        else {
-            alert("Belépés sikertelen.");
-        }
+    } 
+    else if(felh !=  localStorage.getItem("user")){
+      document.getElementById('uzenet').innerHTML = "Téves felhasználónév vagy jelszó."
+    } if (jelsz != localStorage.getItem("passw")){
+        document.getElementById('uzenet').innerHTML = "Téves felhasználónév vagy jelszó."
     }
+}
