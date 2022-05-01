@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="hu">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="apple-touch-icon" sizes="57x57" href="Favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="Favicon/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="Favicon/apple-icon-72x72.png">
@@ -21,375 +24,251 @@
     <link rel="stylesheet" href="bootstrap/css/bootstrap-grid.css">  
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css">  
     <link rel="stylesheet" href="style.css">
-    <title>Főoldal</title>
+    <title>KandóCheat</title>
     <style>
-        * {
-    box-sizing: border-box;
-  }
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: 'segoe ui';
+            background-color: rgb(158, 236, 255);
+        }
+
+        main{
+            margin: 0;
+            padding: 0;
+        }
+
+        div.menu{
+            box-shadow: 0 0 15px rgb(35, 165, 165);
+            background-color: rgb(114, 202, 231);
+            width: 75%;
+            overflow-x: hidden;
+            overflow-y: hidden;
+            white-space: nowrap;
+            padding: auto;
+            margin: auto;
+            margin-bottom: 65px;
+        }
+
+        div.menu:hover{
+            overflow-x: auto;
+            margin-bottom: 48px;
+        }
+
+        div.menu a{
+            display: inline-block;
+            padding: 16px;
+            text-decoration: none;
+            text-align: center;
+            color: black;
+        }
+
+        .box{
+            border: 2px solid rgb(80, 228, 228);
+            border-radius: 14px;
+            width: 120px;
+            background-color: rgb(80, 228, 228);
+            transition: 0.65s;
+        }
+
+        .box:hover{
+            transform: scale(110%);
+            box-shadow: 0 0 12px rgb(35, 165, 165);
+        }
+
+        img{
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 15px;
+            border: 2px solid rgb(35, 165, 165);
+            border-radius: 14px;
+            width: 60px;
+            height: 60px;
+        }
+
+        div.mission{
+            margin-left: 130px;
+            margin-right: 130px;
+        }
+
+        div.mission h1{
+            text-align: center;
+            font-size: 275%;
+        }
+
+        div h3{
+            text-align: center;
+        }
+
+        div.about{
+            margin: 65px;
+            margin-left: 130px;
+            margin-right: 130px;
+        }
+
+        h2{
+            text-align: center;
+            font-size: 185%;
+        }
+
+        div.faculties{
+            width: 80%;
+            height: 795px;
+            margin-left: 125px;
+            margin-right: 125px;
+         margin-bottom: 35px;
+            display: inline-block;
+            background-color: rgb(114, 202, 231);
+            box-shadow: 0 0 12px rgb(35, 165, 165);
+            }
+
+        div.faculties div{
+            width: 450px;
+        }
   
-  body {
-    margin: 0px;
-    font-family: 'segoe ui';
-  }
-  
-  .nav {
-    height: 50px;
-    width: 100%;
-    background-color: #1177ca;
-    position: relative;
-  }
-  .nav > .nav-header {
-    display: inline;
-  }
-  
-  .nav > .nav-header > .nav-title {
-    display: inline-block;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 10px 10px 10px 10px;
-    font-size: 22px;
-    color: #fff;
-    font-weight: 550;
-  }
-  .nav > .nav-links {
-    font-size: 18px;
-    display: inline;
-    float: right;
+        .left{
+            margin-left: 30px;
+            margin-top: 30px;
+            float: left;
+        }
 
-  }
-  .nav > .nav-links > ul li a{
-    color: #fff;
-    line-height: 40px;
-    font-size: 18px;
-    display: block;
-    padding: 0 8px;
-    text-decoration: none;
+        .right{
+            margin-right: 30px;
+            margin-top: 30px;
+            float: right;
+        }
 
-  }
-  .nav > .nav-links > ul{
-    list-style: none;
-    position: relative;
-    padding: 0;
-    margin-top: 5px;
-    
-  }
-  .nav > .nav-links > ul li{
-    display: inline-block;
-    background-color: #1177ca;
-    
-    
-  }
-  .nav > .nav-links > ul li:hover{
-      background-color: #0b65af;
-      border-radius: 5px;
-  }
-  .nav .nav-links ul a.icon{
- margin-left: 80px;
- margin-right: 10px;
- }
+        .dawn{
+            margin-top: 67px;
+        }
 
- .nav .nav-links ul a i{
-    padding: 7px;
-    margin-left: 5px;
-    background-color: #fff;
-    border-radius: 50px;
+        div.faculties div p{
+            font-weight: bold;
+        }
 
- }
- .nav > .nav-btn {
-    display: none; /*Hide toggle button for desktop*/
-  }
-   .nav > #nav-check {
-    display: none;
-  }
-  , *:before, *:after {
-  box-sizing: border-box;
-}
+        .p{
+            text-align: center;
+        }
 
-html {
-  font-size: 100%;
-}
+        div.faculties div ul{
+            margin-left: 125px;
+        }
 
-body {
-  font-family: acumin-pro, system-ui, sans-serif;
-  margin: 0;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  font-size: 14px;
-  background-color: #f4f4f4;
-  align-items: start;
-  min-height: 100vh;
-}
-
-.footer {
-  display: flex;
-  flex-flow: row wrap;
-  padding: 30px 30px 20px 30px;
-  color: #2f2f2f;
-  background-color: #fff;
-  border-top: 1px solid #e5e5e5;
-}
-
-.footer > * {
-  flex:  1 100%;
-}
-
-.footer__addr {
-  margin-right: 1.25em;
-  margin-bottom: 2em;
-}
-
-.footer__logo {
-  font-family: 'Pacifico', cursive;
-  font-weight: 400;
-  text-transform: lowercase;
-  font-size: 1.5rem;
-}
-
-.footer__addr h2 {
-  margin-top: 1.3em;
-  font-size: 15px;
-  font-weight: 400;
-}
-
-.nav__title {
-  font-weight: 400;
-  font-size: 15px;
-}
-
-.footer address {
-  font-style: normal;
-  color: #999;
-}
-
-.footer__btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 36px;
-  max-width: max-content;
-  background-color: rgb(33, 33, 33, 0.07);
-  border-radius: 100px;
-  color: #2f2f2f;
-  line-height: 0;
-  margin: 0.6em 0;
-  font-size: 1rem;
-  padding: 0 1.3em;
-}
-
-.footer ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-.footer li {
-  line-height: 2em;
-}
-
-.footer a {
-  text-decoration: none;
-}
-
-.footer__nav {
-  display: flex;
-	flex-flow: row wrap;
-}
-
-.footer__nav > * {
-  flex: 1 50%;
-  margin-right: 1.25em;
-}
-
-.nav__ul a {
-  color: #999;
-}
-
-.nav__ul--extra {
-  column-count: 2;
-  column-gap: 1.25em;
-}
-
-.legal {
-  display: flex;
-  flex-wrap: wrap;
-  color: #999;
-}
-  
-.legal__links {
-  display: flex;
-  align-items: center;
-}
-
-.heart {
-  color: #2f2f2f;
-}
-
-@media screen and (min-width: 24.375em) {
-  .legal .legal__links {
-    margin-left: auto;
-  }
-}
-
-@media screen and (min-width: 40.375em) {
-  .footer__nav > * {
-    flex: 1;
-  }
-  
-  .nav__item--extra {
-    flex-grow: 2;
-  }
-  
-  .footer__addr {
-    flex: 1 0px;
-  }
-  
-  .footer__nav {
-    flex: 2 0px;
-  }
-}
+        div.faculties div img{
+            margin-left: 150px;
+            width: 150px;
+            height: 150px;
+            border: 2px solid rgb(35, 165, 165);
+            border-radius: 50%;
+        }
     </style>
 </head>
-<body> 
-  <div class="nav">
-    <input type="checkbox" id="nav-check">
-        <div class="nav-header">
-          <div class="nav-title">
-            KandóCheat
-          </div>
-        </div>
-        <div class="nav-btn">
-          <label for="nav-check">
-            <span></span>
-            <span></span>
-            <span></span>
-          </label>
-        </div>
-     
-     <div class="nav-links">
-         <ul>
-          <li><a href="#" target="_blank">Kezdőlap</a></li>
-          <li><a href="#" target="_blank">Rólunk</a></li>
-          
-          
-          <li><a href="#" target="_blank">Kapcsolat</a></li>
-          <a class="icon">
-            <i class="fa fa-twitter"></i>
-            <i class="fa fa-linkedin"></i>
-            <i class="fa fa-youtube"></i>
-
-          </a>
-         </ul>
-     </div>
-   </div>
-   <div class="row">
-       
-    <div class="col-sm-4 col-lg-4 col-lg-4 center">  <h2>Gta-V Csalás  </h2> <a href=""> <img class="img-fluid img-
-        thumbnail" style="width: 500px;" src="img/gta-v.jpg" alt=""></a> <h3>5000FT</h3> </div>
-    <div class="col-sm-4 col-lg-4 col-lg-4 center">   <h2>Minecraft csalás  </h2> <a href=""> <img class="img-fluid img-
-        thumbnail" style="width: 500px;" src="img/minecraft.jpg" alt=""></a> <h3>4500FT</h3> </div> 
-    <div class="col-sm-4 col-lg-4 col-lg-4 center">  <h2>WarThunder csalás  </h2><a href=""> <img class="img-fluid img-
-        thumbnail" style="width: 500px;" src="img/warthunder.jpg" alt=""></a> <h3>15000FT</h3></div>  
-    <div class="col-sm-4 col-lg-4 col-lg-4 center">  <h2>Rocket League Csalás  </h2> <a href=""> <img class="img-fluid img-
-        thumbnail" style="width: 500px;" src="img/rocketleague.jpg" alt=""></a> <h3>2500FT</h3></div>   
-    <div class="col-sm-4 col-lg-4 col-lg-4 center">  <h2>Call of Duty: Modern Warfare Csalás  </h2> <a href=""> <img class="img-fluid img-
-        thumbnail" style="width: 500px;" src="img/CoD2.jpg" alt=""></a> <h3>3500FT</h3></div> 
-    <div class="col-sm-4 col-lg-4 col-lg-4 center">  <h2>Call of Duty: Warzone Csalás  </h2> <a href=""> <img class="img-fluid img-
-        thumbnail" style="width: 500px;" src="img/CoD.jpg" alt=""></a> <h3>7999FT</h3></div>  
-    <div class="col-sm-4 col-lg-4 col-lg-4 center">  <h2>Battlefield V Csalás  </h2> <a href=""> <img class="img-fluid img-
-        thumbnail" style="width: 500px;" src="img/battlefield.jpg" alt=""></a> <h3>4500FT</h3></div>   
-    <div class="col-sm-4 col-lg-4 col-lg-4 center">   <h2>Apex Legends Csalás  </h2> <a href=""> <img class="img-fluid img-
-        thumbnail" style="width: 500px;" src="img/apexlegends.jpg" alt=""></a> <h3>7599FT</h3></div>  
-   <div class="col-sm-4 col-lg-4 col-lg-4 center">   <h2>Valorant Csalás  </h2> <a href=""> <img class="img-fluid img-
-        thumbnail" style="width: 500px;" src="img/valorant.jpg" alt=""></a> <h3>4999FT</h3> </div> 
-</div></div></div>
-</div>
-
-<footer class="footer">
-  <div class="footer__addr">
-    <h1 class="footer__logo">Something</h1>
-        
-    <h2>Contact</h2>
+<body>
     
-    <address>
-      Miskolc, Palóczy László utca 3, 3525<br>
-          
-      <a class="footer__btn" href="rubovszkib@gmail.com">Email Us</a>
-    </address>
-  </div>
-  
-  <ul class="footer__nav">
-    <li class="nav__item">
-      <h2 class="nav__title">Media</h2>
-
-      <ul class="nav__ul">
-        <li>
-          <a href="#">Online</a>
-        </li>
-
-        <li>
-          <a href="#">Print</a>
-        </li>
-            
-        <li>
-          <a href="#">Alternative Ads</a>
-        </li>
-      </ul>
-    </li>
-    
-    <li class="nav__item nav__item--extra">
-      <h2 class="nav__title">Technology</h2>
-      
-      <ul class="nav__ul nav__ul--extra">
-        <li>
-          <a href="#">Hardware Design</a>
-        </li>
-        
-        <li>
-          <a href="#">Software Design</a>
-        </li>
-        
-        <li>
-          <a href="#">Digital Signage</a>
-        </li>
-        
-        <li>
-          <a href="#">Automation</a>
-        </li>
-        
-        <li>
-          <a href="#">Artificial Intelligence</a>
-        </li>
-        
-        <li>
-          <a href="#">IoT</a>
-        </li>
-      </ul>
-    </li>
-    
-    <li class="nav__item">
-      <h2 class="nav__title">Legal</h2>
-      
-      <ul class="nav__ul">
-        <li>
-          <a href="#">Privacy Policy</a>
-        </li>
-        
-        <li>
-          <a href="#">Terms of Use</a>
-        </li>
-        
-        <li>
-          <a href="#">Sitemap</a>
-        </li>
-      </ul>
-    </li>
-  </ul>
-  
-  <div class="legal">
-    <p>&copy; 2022 KandóCheat. All rights reserved.</p>
-    
-    <div class="legal__links">
-      <span>Made with <span class="heart">♥</span> remotely from Anywhere</span>
+    <div class="menu">
+        <a href="">
+            <div class="box">
+                <img src="img/minecraft.jpg" alt="Minecraft">
+                <p>Minecraft</p>
+            </div>
+        </a>
+        <a href="">
+            <div class="box">
+                <img src="img/gta-V.jpg" alt="Gta-5">
+                <p>GTA 5</p>
+            </div>
+        </a>
+        <a href="">
+            <div class="box">
+                <img src="img/battlefield.jpg" alt="Battlefield">
+                <p>Battlefield V</p>
+            </div>
+        </a>
+        <a href="">
+            <div class="box">
+                <img src="img/cod.jpg" alt="Call of Duty">
+                <p>Call of Duty</p>
+            </div>
+        </a>
+        <a href="">
+            <div class="box">
+                <img src="img/apex.jpg" alt="Apex Legends">
+                <p>Apex Legends</p>
+            </div>
+        </a>
+        <a href="">
+            <div class="box">
+                <img src="img/rocket_league.jpg" alt="Rocket league">
+                <p>Rocket League</p>
+            </div>
+        </a>
+        <a href="">
+            <div class="box">
+                <img src="img/warthunder.jpg" alt="Warthunder">
+                <p>Warthunder</p>
+            </div>
+        </a>
+        <a href="">
+            <div class="box">
+                <img src="img/valorant.jpg" alt="Valorant">
+                <p>Valorant</p>
+            </div>
+        </a>
     </div>
-  </div>
-</footer>
+
+    <div class="mission">
+        <h1>- Küldetésünk -</h1>
+        <h3>Küldetésünknek tekintjük a nehéz, hosszú és fárasztó játék elleni harcot!<br>Gondoltál már arra milyen érzés lehet megnyerni egy meccset a kendvenc játékodban, hogy milyen amikor nem húzod fel magad az ellenfél megtörhetetlennek látszó nyerő szériájának láttán? Most megtudhatod! A KandóCheat használatának köszönhetően nincs több rossz vagy vesztes játék, csak a győzelem!<br>Kezd el használni még ma, hogy az ellenfeleidnek már holnap se legyen esélyük!</h3>
+    </div>
+
+    <div class="about">
+        <h2>- Rólunk -</h2>
+        <h3>Csapatunk nagy múltal rendelkezik a csalás készítés terén, csalásainkat világszerte használják.<br>Annak érdekéban, hogy a csalásaink mindig kiszolgálják a felhasználók érdekeit és továbbra is az iparág élvonalába tartozzunk, négyfős csapatokban dolgozunk maximalizálva ezzel a kreatív munka hatásfokát.</h3>
+    </div>
+
+    <h2>- Munkatársaink -</h2>
+    <div class="faculties">
+        <div class="left">
+            <img src="img/balazs.jpg" alt="Rubovszki Balázs" title="Rubovszki Balázs(projektmenezser,A csapat főnöke)">
+            <p class="p">Rubovszki Balázs (projektmenezser)</p>
+            <ul>
+                <li><p>Bódi Szabolcs</p></li>
+                <li><p>Kiss Máté</p></li>
+                <li><p>Tamás Bence</p></li>
+            </ul>
+        </div>
+
+        <div class="right">
+            <img src="img/krisztian.jpg" alt="Szedlák Krisztián" title="Szedlák Krisztián(B csapat főnöke)">
+            <p class="p">Szedlák Krisztián (B csapat főnöke)</p>
+            <ul>
+                <li><p>Péterffy Dominika</p></li>
+                <li><p>Oravecz Ádám</p></li>
+                <li><p>Nagy Ádám</p></li>
+                <li><p>Kamecz Martin</p></li>
+            </ul>
+        </div>
+
+        <div class="left dawn">
+            <img src="img/milan.jpg" alt="Balla Milán" title="Balla Milán(C csapat főnöke)">
+            <p class="p">Balla Milán (C csapat főnöke)</p>
+            <ul>
+                <li><p>Hegymegi Kiss Ákos</p></li>
+                <li><p>Sütő Dominik</p></li>
+                <li><p>Tátrai Levente</p></li>
+            </ul>
+        </div>
+
+        <div class="right">
+            <img src="img/botond.jpg" alt="Mezei Botond" title="Mezei Botond(D csapat Főnöke)">
+            <p class="p">Mezei Botond (D csapat Főnöke)</p>
+            <ul>
+                <li><p>Bakaja Csaba</p></li>
+                <li><p>Csiger Imre Krisztián</p></li>
+                <li><p>Zelenák Szabolcs</p></li>
+            </ul>
+        </div> 
+    </div>
+
 </body>
 </html>
