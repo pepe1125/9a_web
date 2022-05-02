@@ -30,31 +30,31 @@ function termek03()
 function termek04()
 {
     alert("Ezt a terméket a kosárba tettük!");
-    localStorage.setItem('Rocket League', RocketLeague);
+    localStorage.setItem('Call of Duty: Modern Warfare', CallofDutyModernWarfare);
 }
 
 function termek05()
 {
     alert("Ezt a terméket a kosárba tettük!");
-    localStorage.setItem('Call of Duty: Modern Warfare', CallofDutyModernWarfare);
+    localStorage.setItem('Call of Duty: Warzone', CallofDutyWarzone);
 }
 
 function termek06()
 {
     alert("Ezt a terméket a kosárba tettük!");
-    localStorage.setItem('Call of Duty: Warzone', CallofDutyWarzone);
+    localStorage.setItem('Apex Legends', ApexLegends);
 }
 
 function termek07()
 {
     alert("Ezt a terméket a kosárba tettük!");
-    localStorage.setItem('Battlefield V', BattlefieldV);
+    localStorage.setItem('Rocket League', RocketLeague);
 }
 
 function termek08()
 {
     alert("Ezt a terméket a kosárba tettük!");
-    localStorage.setItem('Apex Legends', ApexLegends);
+    localStorage.setItem('War Thunder', WarThunder);
 }
 
 function termek09()
