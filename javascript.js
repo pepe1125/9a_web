@@ -149,6 +149,10 @@ function reg(username, password, password2)
                 localStorage.setItem("passw", password)
                 alert("Regisztráció sikeres.")
             }
+            else
+            {
+                alert("Sikertelen regisztráció.")
+            }
         }
     }
 }
@@ -164,9 +168,12 @@ function bej(felh, jelsz)
             alert("Belépés sikeres.");
         }
     } 
-    else if(felh !=  localStorage.getItem("user")){
+    else if(felh !=  localStorage.getItem("user"))
+    {
       document.getElementById('uzenet').innerHTML = "Téves felhasználónév vagy jelszó."
-    } if (jelsz != localStorage.getItem("passw")){
+    } 
+    if (jelsz != localStorage.getItem("passw"))
+    {
         document.getElementById('uzenet').innerHTML = "Téves felhasználónév vagy jelszó."
     }
 }

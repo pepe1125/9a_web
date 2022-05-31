@@ -30,3 +30,62 @@ h2 {
     z-index: 1;
     padding-top: 30px;
 }
+
+fieldset
+{
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+}
+
+.fieldset
+{
+    width: 25%;
+}
+
+legend
+{
+    text-align: left;
+    font-style: italic;
+}
+
+fieldset input
+{
+    height: 25px;
+}
+
+fieldset button
+{
+    margin-top: 10px;
+}
+
+.fieldset button
+{
+    margin-top: 0px;
+    height: 35px;
+}
+
+.button1
+{
+    height: 30px;
+    width: 150px;
+}
+
+.button2
+{
+    height: 30px;
+    width: 150px;
+    margin-left: 5px;
+}
+
+.input
+{
+    width: 300px;
+    height: 35px;
+}
+
+.input2
+{
+    margin-top: 5px;
+}

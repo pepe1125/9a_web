@@ -25,13 +25,23 @@
         <title>Bejelentkezés</title>
     </head>
         <body style="text-align: center; background-color: aqua;">
-            <fieldset>
-                <legend>Bejelentkezés</legend>
-                <input type="text" id="felh" placeholder="Felhasználónév" required>
-                <input type="password" id="jelsz" placeholder="Jelszó" required>
-                <p style="color: red;" id="uzenet"></p>
-                <button onclick="bej(felh.value, jelsz.value)">Bejelentkezés</button>
-            </fieldset>
+            <form>
+                <fieldset class="fieldset">
+                    <legend>
+                        <h2>
+                            Bejelentkezés
+                        </h2>
+                    </legend>
+                    <input type="text" id="felh" placeholder="Felhasználónév" class="input" required>
+                    <br>
+                    <input type="password" id="jelsz" class="input input2" placeholder="Jelszó" required>
+                    <p style="color: red;" id="uzenet"></p>
+                    <button type="reset" class="button1">
+                        Mégse
+                    </button>
+                    <button onclick="bej(felh.value, jelsz.value)" class="button2">Bejelentkezés</button>
+                </fieldset>
+            </form>
             <br>
             <a id="bej" href="reg.html">Még nincs fiókod?</a>
             <script src="javascript.js"></script>
