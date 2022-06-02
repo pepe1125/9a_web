@@ -8,7 +8,59 @@ var CallofDutyWarzone = 7999
 var ApexLegends = 7599 
 var Valorant = 4999 
 
+function termek01()
+{
+    alert("Ezt a terméket a kosárba tettük!");
+    localStorage.setItem('Gta V', GtaV);
+}
 
+function termek02()
+{
+    alert("Ezt a terméket a kosárba tettük!");
+    localStorage.setItem('Minecraft', Minecraft);
+}
+
+function termek03()
+{
+    alert("Ezt a terméket a kosárba tettük!");
+    localStorage.setItem('War Thunder', WarThunder);
+}
+
+function termek04()
+{
+    alert("Ezt a terméket a kosárba tettük!");
+    localStorage.setItem('Rocket League', RocketLeague);
+}
+
+function termek05()
+{
+    alert("Ezt a terméket a kosárba tettük!");
+    localStorage.setItem('Call of Duty: Modern Warfare', CallofDutyModernWarfare);
+}
+
+function termek06()
+{
+    alert("Ezt a terméket a kosárba tettük!");
+    localStorage.setItem('Call of Duty: Warzone', CallofDutyWarzone);
+}
+
+function termek07()
+{
+    alert("Ezt a terméket a kosárba tettük!");
+    localStorage.setItem('Battlefield V', BattlefieldV);
+}
+
+function termek08()
+{
+    alert("Ezt a terméket a kosárba tettük!");
+    localStorage.setItem('Apex Legends', ApexLegends);
+}
+
+function termek09()
+{
+    alert("Ezt a terméket a kosárba tettük!");
+    localStorage.setItem('Valorant', Valorant);
+}
 
 
 function reg(username, password, password2)
